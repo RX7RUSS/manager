@@ -1,14 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class App extends React.Component {
-  render() {
+const App = () =>  {
     return (
       <View style={styles.container}>
         <Text>Manager Schedule App</Text>
       </View>
     );
-  }
 }
 
 const styles = StyleSheet.create({
@@ -19,3 +17,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
