@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 const App = () =>  {
     return (
       <View style={styles.container}>
-        <Text>Manager Schedule App</Text>
+        <Text>Manager Scheduling App</Text>
       </View>
     );
 }
