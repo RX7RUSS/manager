@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <Provider store={createStore()}>
         <View style={styles.container}>
-          <Text>Manager Scheduling App</Text>
+          <Text>Redux Manager Scheduling App</Text>
         </View>
       </Provider>
     );
