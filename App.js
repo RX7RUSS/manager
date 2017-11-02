@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { StyleSheet, Text, View } from 'react-native';
-import reducers from './reducers';
+import reducers from './src/reducers';
 
 
 class App extends Component {
