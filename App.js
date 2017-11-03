@@ -23,7 +23,7 @@ class App extends Component {
     return (
       <Provider store={createStore(reducers)}>
         <View style={styles.container}>
-          <Text>Redux Manager Scheduling App</Text>
+          <Text>Schedule Master</Text>
         </View>
       </Provider>
     );
