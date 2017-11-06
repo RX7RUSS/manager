@@ -4,6 +4,7 @@ import { createStore } from 'redux';
 import { StyleSheet, Text, View } from 'react-native';
 import reducers from './src/reducers';
 import firebase from 'firebase';
+import LoginForm from './src/components/LoginForm';
 
 
 class App extends Component {
@@ -22,9 +23,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={createStore(reducers)}>
-        <View style={styles.container}>
-          <Text>Schedule Master</Text>
-        </View>
+        <LoginForm />
       </Provider>
     );
   }
