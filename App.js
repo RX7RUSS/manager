@@ -1,11 +1,11 @@
+import ReduxThunk from 'redux-thunk';
+import firebase from 'firebase';
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import reducers from './src/reducers';
-import firebase from 'firebase';
 import LoginForm from './src/components/LoginForm';
-import ReduxThunk from 'redux-thunk';
 
 
 class App extends Component {
@@ -16,9 +16,9 @@ class App extends Component {
       databaseURL: 'https://manage-b486e.firebaseio.com',
       projectId: 'manage-b486e',
       storageBucket: 'manage-b486e.appspot.com',
-      messagingSenderId: '933343990113'
+      messagingSenderId: '933343990113',
     };
-  firebase.initializeApp(config);
+    firebase.initializeApp(config);
   }
 
   render() {
@@ -26,7 +26,9 @@ class App extends Component {
 
     return (
       <Provider store={store}>
-        <LoginForm />
+        <View style={styles.container}>
+          <LoginForm  />
+        </View>
       </Provider>
     );
   }
@@ -34,10 +36,7 @@ class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fefefe',
-    alignItems: 'center',
-    justifyContent: 'center',
+    marginTop: 25,
   },
 });
 
