@@ -56,3 +56,10 @@ const employeeAdded = (dispatch, employee) => {
     payload: employee
   });
 };
+
+const employeeFired = (dispatch, employee) => {
+  dispatch({
+    type: EMPLOYEE_FIRED,
+    payload: employee
+  });
+};
