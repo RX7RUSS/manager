@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import { StyleSheet, View } from 'react-native';
 import reducers from './src/reducers';
-import LoginForm from './src/components/LoginForm';
+import Router from './src/Router';
 
 
 class App extends Component {
@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <View style={styles.container}>
-          <LoginForm  />
+          <Router />
         </View>
       </Provider>
     );
