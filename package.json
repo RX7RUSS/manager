@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "eslint-plugin-react": "^7.4.0",
     "jest-expo": "^23.0.1",
     "react-native-scripts": "1.8.1",
     "react-test-renderer": "16.2.0"
@@ -20,7 +19,6 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "eslint": "^4.11.0",
     "expo": "^21.0.0",
     "firebase": "^4.6.0",
     "react": "16.0.0-alpha.12",
