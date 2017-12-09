@@ -36,7 +36,7 @@ class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 20,
+    marginTop: 25,
   },
 });
 
