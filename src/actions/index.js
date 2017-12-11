@@ -49,10 +49,3 @@ const loginUserSuccess = (dispatch, user) => {
     payload: user
   });
 };
-
-const employeeAdded = (dispatch, employee) => {
-  dispatch({
-    type: EMPLOYEE_ADDED,
-    payload: employee
-  });
-};
