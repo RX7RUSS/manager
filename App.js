@@ -26,7 +26,7 @@ class App extends Component {
 
     return (
       <Provider store={store}>
-        <View style={styles.container}>
+        <View>
           <Router />
         </View>
       </Provider>
