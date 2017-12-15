@@ -6,6 +6,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { StyleSheet, View } from 'react-native';
 import reducers from './src/reducers';
 import Router from './src/Router';
+import LoginForm from './src/components/LoginForm';
 
 
 class App extends Component {
@@ -26,7 +27,7 @@ class App extends Component {
 
     return (
       <Provider store={store}>
-        <View>
+        <View style={styles.container}>
           <Router />
         </View>
       </Provider>
