@@ -5,8 +5,8 @@ class StaffList extends Component {
   render() {
     return (
       <View>
-        <Text> Fake Employee </Text>
-        <Text> Fake Employee </Text>
+        <Text> Test Employee </Text>
+        <Text> Test Employee </Text>
       </View>
     );
   }
