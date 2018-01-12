@@ -13,9 +13,6 @@ const RouterComponent = () => {
         <Scene key="main" >
           <Scene key="stafflist" component={StaffList} title="Employees" />
         </Scene>
-        <Scene key="map" >
-          <Scene key="MapView" component={StaffList} title="MapView" />
-        </Scene>
       </Scene>
     </Router>
   );
